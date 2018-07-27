@@ -1,0 +1,52 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="oldcard">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="postcard" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="type">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="status" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="sent"/>
+                                                        <xs:enumeration value="not sent"/>
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="country"/>
+                            <xs:element name="year">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:short">
+                                        <xs:minInclusive value="0"/>
+                                        <xs:maxExclusive value="1990"/>
+                                        <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="author" maxOccurs="unbounded" minOccurs="0"/>
+                            <xs:element name="valuable">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:enumeration value="thematic"/>
+                                        <xs:enumeration value="collectible"/>
+                                        <xs:enumeration value="historical"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="theme" default="city landscape"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

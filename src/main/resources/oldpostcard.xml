@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oldcard>
+    <postcard theme="city landscape">
+        <type status="sent">
+            congratulations
+        </type>
+        <country>Ukraine</country>
+        <year>1967</year>
+        <author>Linda Cox</author>
+        <valuable>thematic</valuable>
+    </postcard>
+    <postcard theme="nature">
+        <type status="not sent">
+            advertising
+        </type>
+        <country>USA</country>
+        <year>1989</year>
+        <author>Piter Brown</author>
+        <valuable>thematic</valuable>
+    </postcard>
+    <postcard theme="people">
+        <type status="sent">
+            usual
+        </type>
+        <country>Poland</country>
+        <year>1963</year>
+        <author/>
+        <valuable>thematic</valuable>
+    </postcard>
+    <postcard theme="religion">
+        <type status="not sent">
+            congratulations
+        </type>
+        <country>Brazil</country>
+        <year>1948</year>
+        <author>Edmund Irner</author>
+        <valuable>historical</valuable>
+    </postcard>
+    <postcard theme="sports">
+        <type status="sent">
+            advertising
+        </type>
+        <country>Italy</country>
+        <year>1949</year>
+        <author>Jonatan Li</author>
+        <valuable>collectible</valuable>
+    </postcard>
+    <postcard theme="architecture">
+        <type status="sent">
+            usual
+        </type>
+        <country>Greece</country>
+        <year>1970</year>
+        <author>Samanta Kids</author>
+        <valuable>historical</valuable>
+    </postcard>
+</oldcard>
